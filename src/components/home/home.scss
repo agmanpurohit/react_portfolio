@@ -1,0 +1,113 @@
+.home {
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/argv.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+
+    .home-text {
+        h3 {
+            color: #FF6D64;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+
+        h1 {
+            color: #141313;
+            font-size: 66px;
+            font-weight: 700;
+            line-height: 100px;
+            text-transform: capitalize;
+        }
+
+        h4 {
+            color: #141313;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -0.96px;
+
+            span {
+                color: #FF6D64;
+                font-weight: 400;
+            }
+        }
+
+        p {
+            max-width: 490px;
+            color: #141313;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 30px;
+            margin: 0 0px 28px;
+        }
+
+        .social-icon {
+            i {
+                color: #fff;
+                font-size: 20px;
+                height: 40px;
+                width: 40px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid #FF6D64;
+                background: #FF6D64;
+                margin-right: 10px;
+                margin-bottom: 40px;
+                border-radius: 10px;
+            }
+
+            i:hover {
+                background: transparent;
+                color: #FF6D64;
+            }
+        }
+
+        .main-btn {
+            display: flex;
+            align-items: center;
+
+            .mn-btn {
+                img {
+                    width: 20px;
+                    height: auto;
+                    vertical-align: middle;
+                    margin-left: 6px;
+                }
+            }
+
+        }
+
+        .scroll {
+            position: absolute;
+            top: 94%;
+            left: 45%;
+            transform: translateY(-50%);
+            transition: all .42s;
+
+            a {
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                color: #FF6D64;
+                font-weight: 500;
+
+                i {
+                    font-size: 22px;
+                    color: #141313;
+                }
+            }
+        }
+
+        .scroll:hover {
+            transform: translateY(-4px) scale(1.08);
+        }
+    }
+}
