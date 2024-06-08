@@ -1,0 +1,81 @@
+@import '../../App.css';    
+
+.works {
+    .work-cent {
+        text-align: center;
+
+        h1 {
+            color: #141313;
+            font-size: 38px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+
+            span {
+                color: #FF6D64;
+            }
+        }
+
+        h5 {
+            color: #141313;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 700;
+            margin-bottom: 120px;
+        }
+    }
+
+    .main-works {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+        align-items: center;
+        gap: 6rem;
+
+        .smpl-1 {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            h6 {
+                color: #141313;
+                font-size: 18px;
+                font-style: italic;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+
+            h1 {
+                color: #141313;
+                font-size: 30px;
+                font-weight: 700;
+                text-transform: capitalize;
+                line-height: 40px;
+                margin-bottom: 10px;
+            }
+
+            .wk-icon {
+                img {
+                    width: 60px;
+                    height: 60px;
+                    cursor: pointer;
+                }
+            }
+
+            .work-img {
+                overflow: hidden;
+
+                img {
+                    max-width: 100%;
+                    width: 300px;
+                    height: auto;
+                    transition: all .42s;
+                }
+            }
+
+            .work-img:hover img {
+                transform: scale(1.1);
+                filter: brightness(50%) hue-rotate(45deg);
+            }
+        }
+    }
+}

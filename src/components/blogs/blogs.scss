@@ -1,0 +1,79 @@
+@import '../../App.css';
+
+.blog {
+    .blog-text {
+        text-align: center;
+
+        h1 {
+            color: #141313;
+            font-size: 38px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+
+            span {
+                color: #FF6D64;
+            }
+        }
+
+        h5 {
+            color: #141313;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 700;
+            margin-bottom: 120px;
+        }
+    }
+
+    .main-blog {
+
+        .blog-sec {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+            align-items: center;
+            gap: 4rem;
+
+            .blog-1 {
+                cursor: pointer;
+
+                h5 {
+                    color: #141313;
+                    font-size: 18px;
+                    font-style: italic;
+                    font-weight: 700;
+                    margin: 15px 0;
+                }
+
+                .blog-img {
+                    overflow: hidden;
+
+                    img {
+                        max-width: 100%;
+                        width: 100%;
+                        height: auto;
+                        transition: all .42s;
+                    }
+                }
+
+                .blog-img:hover img {
+                    transform: scale(1.1);
+                    filter: brightness(50%) hue-rotate(45deg);
+                }
+
+                h1 {
+                    color: #141313;
+                    font-size: 24px;
+                    font-weight: 700;
+                    text-transform: lowercase;
+                    line-height: 32px;
+                }
+            }
+        }
+
+        .blogs-btn {
+            text-align: center;
+            margin-top: 80px;
+            
+        }
+    }
+}

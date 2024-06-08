@@ -1,0 +1,78 @@
+@import '../../App.css';
+
+.services {
+    .serv-center {
+        text-align: center;
+
+        h1 {
+            color: #141313;
+            font-size: 38px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+
+            span {
+                color: #FF6D64;
+            }
+        }
+
+        h5 {
+            color: #141313;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 7010;
+            margin-bottom: 100px;
+        }
+
+    }
+
+    .main-serv {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        align-items: center;
+        gap: 2rem;
+
+        .serv-one {
+            .serv {
+                padding: 35px 25px;
+                background: #141313;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: all .42s;
+
+                i {
+                    color: #fff;
+                    font-size: 45px;
+                    margin-bottom: 10px;
+                }
+
+                h4 {
+                    color: #fff;
+                    font-weight: 500;
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    color: #C0BBBB;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    margin-bottom: 15px;
+                }
+
+                .serv-btn {
+                    a {
+                        color: #FF6D64;
+                    }
+                }
+            }
+
+            .serv:hover {
+                transform: translateY(-8px);
+                box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            }
+        }
+    }
+}

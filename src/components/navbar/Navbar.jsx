@@ -3,6 +3,7 @@ import logo from '../../assets/logo.png'
 import './navbar.scss'
 
 const Navbar = () => {
+
     return (
         <>
             <header>
